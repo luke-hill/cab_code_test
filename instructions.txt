@@ -1,0 +1,9 @@
+Framework create tests (Cucumber SP)
+Happy unhappy path
+Add readme with installation instructions
+Feature: Search Google for CAB + Verify Search functionality on CAB site
+    As a User I want to search for CAB on google
+    Once I navigate to CAB, I want to see and verify list of items on main nav header on homepage
+    And also search for pension info on the homepage and verify results contain a link to State Pension
+
+Ideal time for Kata 2-3 hours.
