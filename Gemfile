@@ -1,0 +1,11 @@
+source 'https://www.rubygems.org'
+
+gem 'capybara', '<= 3.29'
+gem 'cucumber', '~> 3.1'
+gem 'rake', '>= 12.3'
+gem 'rubocop', '~> 0.81.0'
+gem 'rubocop-performance', '~> 1.5.1'
+gem 'rubocop-rspec', '~> 1.33.0'
+gem 'rspec'
+gem 'selenium-webdriver', '~> 3.10'
+gem 'webdrivers'
