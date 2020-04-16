@@ -11,25 +11,25 @@ When("I make a search using the CAB search bar for {string}") do |string|
 end
 
 When("I select the option for State Pension information") do
-  @app.cab_search_results.link_for('State Pension').click
+  @app.cab_search.link_for('State Pension').click
 end
 
 Then("the CAB search results should include information about Pensions") do
   # CAB-NOTE-9 - I guess these assertions aren't great. But with a bit more
   # Product Knowledge I could improve them
-  expect(@app.cab_search_results.link_titles)
+  expect(@app.cab_search.link_titles)
     .to include(a_string_matching(/Pensions/))
 end
 
 Then("the CAB search results should include information about the State Pension") do
   # CAB-NOTE-9 - I guess these assertions aren't great. But with a bit more
   # Product Knowledge I could improve them
-  expect(@app.cab_search_results.link_titles)
+  expect(@app.cab_search.link_titles)
     .to include(a_string_matching(/State Pension/))
 end
 
 Then("the CAB search results should not show any results") do
-  expect(@app.cab_search_results.result_items).to be_empty
+  expect(@app.cab_search.result_items).to be_empty
 end
 
 Then("I should be presented with detailed information about the State Pension") do
@@ -37,6 +37,6 @@ Then("I should be presented with detailed information about the State Pension") 
 end
 
 Then("results should be ordered from most to least relevant") do
-  expect(@app.cab_search_results.result_accuracy_scores)
-    .to eq(@app.cab_search_results.sorted_result_accuracy_scores)
+  expect(@app.cab_search.result_accuracy_scores)
+    .to eq(@app.cab_search.sorted_result_accuracy_scores)
 end

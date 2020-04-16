@@ -4,6 +4,6 @@ Add readme with installation instructions - DONE
 Feature: Search Google for CAB + Verify Search functionality on CAB site- DONE
     As a User I want to search for CAB on google - DONE
     Once I navigate to CAB, I want to see and verify list of items on main nav header on homepage - DONE
-    And also search for pension info on the homepage and verify results contain a link to State Pension - TODO
+    And also search for pension info on the homepage and verify results contain a link to State Pension - DONE
 
 Ideal time for Kata 2-3 hours.
