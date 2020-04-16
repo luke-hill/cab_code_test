@@ -9,9 +9,8 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'site_prism'
 
-# # To prevent natural cucumber load order
-# require_relative 'js_helper'
-# require_relative 'sections/all'
+# To prevent natural cucumber load order
+require_relative 'pages/google/home/uk'
 
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, browser: browser)
