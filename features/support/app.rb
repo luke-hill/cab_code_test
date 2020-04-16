@@ -7,6 +7,6 @@ class App
   end
 
   def google_results
-    @google_results
+    @google_results ||= Google::Results::UK.new
   end
 end

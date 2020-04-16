@@ -11,5 +11,11 @@ When(/^I make a search for (.*)$/) do |term|
 end
 
 Then("the results should include the Citizens Advice Bureau") do
-  expect(@app.results.result_titles).to include("Citizens Advice Bureau")
+  expect(@app.google_results.result_titles)
+    .to include(a_string_matching(/Citizens Advice Bureau/))
+end
+
+Then("the results should not include the Citizens Advice Bureau") do
+  expect(@app.google_results.result_titles)
+    .not_to include(a_string_matching(/Citizens Advice Bureau/))
 end
