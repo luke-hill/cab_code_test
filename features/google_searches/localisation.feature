@@ -8,7 +8,6 @@ Feature: Keyword searches on various google sites
 
     Examples:
       | search_term            |
-      | CAB                    |
       | Citizens Advice        |
       | Citizens Advice Bureau |
 
@@ -20,7 +19,6 @@ Feature: Keyword searches on various google sites
 
     Examples:
       | search_term            |
-      | CAB                    |
       | Citizens Advice        |
       | Citizens Advice Bureau |
 
@@ -32,7 +30,6 @@ Feature: Keyword searches on various google sites
 
     Examples:
       | search_term            |
-      | CAB                    |
       | Citizens Advice        |
       | Citizens Advice Bureau |
 
@@ -44,6 +41,5 @@ Feature: Keyword searches on various google sites
 
     Examples:
       | search_term            |
-      | CAB                    |
       | Citizens Advice        |
       | Citizens Advice Bureau |

@@ -1,8 +1,8 @@
 Framework create tests (Cucumber SP)
-Happy unhappy path
-Add readme with installation instructions
-Feature: Search Google for CAB + Verify Search functionality on CAB site
-    As a User I want to search for CAB on google
+Happy unhappy path - Basic DONE
+Add readme with installation instructions - TODO more
+Feature: Search Google for CAB + Verify Search functionality on CAB site- Half done
+    As a User I want to search for CAB on google - DONE
     Once I navigate to CAB, I want to see and verify list of items on main nav header on homepage
     And also search for pension info on the homepage and verify results contain a link to State Pension
 

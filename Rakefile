@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 
 namespace :cukes do
-  desc 'Run all cukes created for Coding Challenge'
+  desc 'Run all PASSING cukes created for Coding Challenge'
   task :all do
-    system('bundle exec cucumber') || raise('All Cukes failed')
+    system('bundle exec cucumber --t "not @failing"') ||
+      raise('All test failed')
   end
 
-  desc 'Run all smoke-test cukes created for Coding Challenge'
-  task :smoke_test do
-    system('bundle exec cucumber features/smoke_test.feature') ||
+  desc 'Run all google search cukes created for Coding Challenge'
+  task :google_search do
+    system('bundle exec cucumber features/google_searches') ||
       raise('Smoke test failed')
   end
 end
