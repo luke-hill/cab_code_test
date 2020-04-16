@@ -8,11 +8,14 @@ require 'capybara/dsl'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'site_prism'
+require 'webdrivers'
 
 # To prevent natural cucumber load order
 require_relative 'pages/google/home/uk'
+require_relative 'helpers/data'
 
 Capybara.register_driver :selenium do |app|
+  browser = ENV.fetch('BROWSER', 'chrome').to_sym
   Capybara::Selenium::Driver.new(app, browser: browser)
 end
 
@@ -31,8 +34,4 @@ Capybara.configure do |config|
   config.app_host = 'https://www.google.co.uk/'
 end
 
-private
-
-def browser
-  ENV.fetch('BROWSER', 'chrome').to_sym
-end
+World(Helpers::Data)
