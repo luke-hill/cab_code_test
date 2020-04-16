@@ -11,4 +11,8 @@ class App
   def google_results
     @google_results ||= Google::Results.new
   end
+
+  def cab_home
+    @cab_home ||= CAB::Home.new
+  end
 end

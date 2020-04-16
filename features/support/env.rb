@@ -6,6 +6,7 @@ Dotenv.load('.env')
 require 'capybara'
 require 'capybara/dsl'
 require 'capybara/cucumber'
+require 'rspec'
 require 'selenium-webdriver'
 require 'site_prism'
 require 'webdrivers'
