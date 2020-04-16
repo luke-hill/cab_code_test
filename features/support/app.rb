@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class App
   # CAB-NOTE-3
   # This structure is weird as we have 2 isolated areas, google and CAB
