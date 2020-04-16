@@ -16,8 +16,8 @@ class App
     @cab_home ||= CAB::Home.new
   end
 
-  def cab_search_results
-    @cab_search_results ||= CAB::SearchResults.new
+  def cab_search
+    @cab_search ||= CAB::Search.new
   end
 
   def cab_state_pension
