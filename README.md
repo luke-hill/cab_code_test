@@ -19,20 +19,24 @@ $ git clone git@github.com:luke-hill/cab_code_test.git
 $ cd cab_code_test
 $ cp .env.example .env
 # Amend variables if appropriate (BROWSER only)
+$ bundle
 ```
 
 ### Instructions
 
-As per `.travis.yml` the CI pipeline has been enabled for the repo and you can see the
-red/green passes for each run. All publically visible.
+Running locally can be done through the usage of the rake tasks. Ideally you would just run
+`bundle exec rake cukes:all` to run all the separate features. This will ignore failing tests
+which each have a code note next to them explaining the issue I would remedy
+
+```bash
+$ bundle exec rake --tasks
+# Then an example rake could be
+$ bundle exec rake cukes:all
+```
 
 **NB:** There is a cap made on `capybara` due to an undisagnosed issue in the 3.30 branch
 (I am working with Thomas Walpole on solving this issue but for now it can be mititgated
 by using 3.29 or below, which is still reasonably up to date).
-
-Running locally can be done through the usage of the rake tasks. Ideally you would just run
-`bundle exec rake cukes:all` to run all the separate features. This will ignore failing tests
-which each have a code note next to them explaining the issue I would remedy
 
 In each cucumber feature a variety of comments have been added to explain next steps and
 potential refactoring / additional scenarios I would add (If time permitted)
