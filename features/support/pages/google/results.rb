@@ -24,5 +24,19 @@ module Google
     def result_titles
       individual_results.map { |section| section.title.text }
     end
+
+    # This code isn't very good because we're hitting a JS injection
+    # detection. I'd probably refactor this into a helper given more time
+    def navigate_to_cab
+      first_cab_entry.link.click
+      ::CAB::Home.new.english_overlay_option.click
+    end
+
+    def first_cab_entry
+      individual_results.detect do |element|
+        element.text.include?('citizen') &&
+          element.text.include?('advice')
+      end
+    end
   end
 end
