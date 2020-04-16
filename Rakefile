@@ -3,7 +3,8 @@
 namespace :cukes do
   desc 'Run all PASSING cukes created for Coding Challenge'
   task :all do
-    system('bundle exec cucumber --t "not @failing"') || raise('All test failed')
+    system('bundle exec cucumber --t "not @failing"') ||
+      raise('All test failed')
   end
 
   desc 'Run all google search cukes created for Coding Challenge'
