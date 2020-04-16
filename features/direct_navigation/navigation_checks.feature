@@ -14,6 +14,8 @@ Feature: Navigation checks on CAB site
     And I navigate to the CAB home page
     Then I should be on the CAB homepage
 
+  # Note this test changes slightly on responsive view with last link.
+  # As such I maximise the window before each running test
   @positive
   Scenario: Navigate to CAB homepage and validate navigation links
     Given I am on the uk google website

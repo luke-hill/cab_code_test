@@ -13,11 +13,9 @@ module Google
     # result to call the number e.t.c.
     def individual_results
       result_items.select do |section|
-        begin
-          section.title
-        rescue Capybara::ElementNotFound
-          false
-        end
+        section.title
+      rescue Capybara::ElementNotFound
+        false
       end
     end
 
