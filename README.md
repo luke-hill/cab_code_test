@@ -1,5 +1,6 @@
 # cab_code_test
 Citizens Advice Bureau - Code test
+[![Build Status](https://travis-ci.com/luke-hill/cab_code_test.png)](https://travis-ci.com/luke-hill/cab_code_test)
 
 ## Timeline
 
