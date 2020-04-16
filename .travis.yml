@@ -22,7 +22,7 @@ addons:
   firefox: latest
 
 before_install:
-  - gem install bundler -v '< 2'
+  - gem install bundler -v 2.1.4
 
 services:
   - xvfb
@@ -33,7 +33,3 @@ script:
 branches:
   only:
     - master
-
-matrix:
-  allow_failures:
-    - rvm: 2.7
