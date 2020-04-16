@@ -5,10 +5,10 @@ class App
   # This structure is weird as we have 2 isolated areas, google and CAB
   # So I would probably restructure this better with more time
   def google_home
-    @google_home ||= Google::Home::UK.new
+    @google_home ||= Google::Home.new
   end
 
   def google_results
-    @google_results ||= Google::Results::UK.new
+    @google_results ||= Google::Results.new
   end
 end
