@@ -30,8 +30,6 @@ Feature: Navigation checks on CAB site
 
     Examples:
       | navigation_option |
-      | a                 |
-      | a                 |
-      | a                 |
-      | a                 |
-    
+      | Benefits          |
+      | Consumer          |
+      | Housing           |
