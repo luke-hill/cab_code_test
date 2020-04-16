@@ -35,5 +35,5 @@ end
 private
 
 def browser
-  ENV.fetch('browser', 'chrome').to_sym
+  ENV.fetch('BROWSER', 'chrome').to_sym
 end
