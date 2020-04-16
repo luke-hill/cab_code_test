@@ -11,7 +11,6 @@ require 'site_prism'
 require 'webdrivers'
 
 # To prevent natural cucumber load order
-require_relative 'pages/google/home/uk'
 require_relative 'helpers/data'
 
 Capybara.register_driver :selenium do |app|
