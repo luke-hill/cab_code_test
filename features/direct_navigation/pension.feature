@@ -15,7 +15,7 @@ Feature: Search for Pension Info on CAB homepage
     Given I am on the CAB homepage
     When I make a search using the CAB search bar for "Pensions"
     And I select the option for State Pension information
-    Then I should be presented with detailed information about State Pensions
+    Then I should be presented with detailed information about the State Pension
 
   @positive
   Scenario: Validate Results are ordered according to accuracy
