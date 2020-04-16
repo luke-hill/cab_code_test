@@ -8,7 +8,8 @@ namespace :cukes do
 
   desc 'Run all smoke-test cukes created for Coding Challenge'
   task :smoke_test do
-    system('bundle exec cucumber features/smoke_test.feature') || raise('Smoke test failed')
+    system('bundle exec cucumber features/smoke_test.feature') ||
+      raise('Smoke test failed')
   end
 end
 

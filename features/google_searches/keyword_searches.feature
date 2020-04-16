@@ -1,6 +1,8 @@
 Feature: Google Keyword searches for CAB
 
-  @positive
+  # CAB-NOTE-7
+  # This scenario fails, which surprised me. Perhaps one for your SEO team to investigate?
+  @positive @failing
   Scenario: Search for CAB acronym
     Given I am on the uk google website
     When I make a search for CAB
