@@ -23,4 +23,4 @@ Feature: Google Keyword searches for CAB
     Given I am on the uk google website
     When I make a search for CBA
     Then the results should not include the Citizens Advice Bureau
-    
+
