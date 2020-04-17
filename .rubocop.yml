@@ -3,6 +3,11 @@ Lint/RaiseException:
 
 Lint/StructNewOverride:
   Enabled: true
+Metrics/LineLength:
+  IgnoredPatterns:
+    - '^Given'
+    - '^When'
+    - '^Then'
 
 Style/HashEachMethods:
   Enabled: true
