@@ -10,7 +10,7 @@ Citizens Advice Bureau - Code test
 ### Setup
 
 This repo was tested locally with ruby 2.7.1 but on travis I used the latest patches of
-`2.4` <-> `2.7`
+`2.5` <-> `2.7`
 ```bash
 $ rvm install 2.7.1
 $ git clone https://github.com/luke-hill/cab_code_test.git
