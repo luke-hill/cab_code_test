@@ -19,7 +19,7 @@ module CAB
     end
 
     def result_accuracy_scores
-      result_items.map { |result| result.root_element["data-score"].to_f }
+      result_items.map { |result| result.root_element['data-score'].to_f }
     end
 
     def sorted_result_accuracy_scores
